@@ -1,0 +1,135 @@
+:root {
+  --white: #FFFFFF;
+  --yellow: #FFF000;
+  --dark: #333333;
+  --light: #DDDDDD;
+  --grey: #707070;
+  --light-grey: #CCCCCC;
+  --pink: #E3007F;
+
+  /* Primary */
+  --blue: #009FE8;
+  --link: #1155CC;
+
+  /* Danger */
+  --danger-primary: #721C24;
+  --danger-secondary: #F5C6CB;
+  --danger-tertiary: #F8D7DA;
+
+  /* Success */
+  --success-primary: #155724;
+  --success-secondary: #D4EDDA;
+  --success-tertiary: #C3E6CB;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+.container {
+  /* border: 1px solid green; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--yellow);
+  padding: 8px 0;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark);
+
+    p:first-child {
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    p:last-child {
+      font-size: 13px;
+    }
+  }
+
+}
+
+
+/* Mobile First */
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+/* Remove pag masyado maliit or zoomed out */
+@media (min-width: 1340px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
+
+
+/* Web First */
+/* xs */
+@media (max-width: 639px) {
+  footer {
+    padding: 8px 16px;
+  }
+}
+
+/* sm */
+@media (max-width: 768px) {}
+
+/* md */
+@media (max-width: 1023px) {}
+
+/* lg */
+@media (max-width: 1279px) {}
+
+/* xl */
+@media (max-width: 1535px) {}
