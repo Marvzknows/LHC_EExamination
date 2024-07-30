@@ -4,6 +4,7 @@ $(document).ready(function() {
     const items = $('.carousel-item');
     const itemCount = items.length;
 
+    // #region Handle Carousel
     $('.next').click(function() {
         currentIndex = (currentIndex + 1) % itemCount;
         updateCarousel();
@@ -20,4 +21,6 @@ $(document).ready(function() {
         items.removeClass('active');
         items.eq(currentIndex).addClass('active');
     }
+    // #regionend
+
 });

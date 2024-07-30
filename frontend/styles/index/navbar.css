@@ -1,9 +1,13 @@
 .nav-container {
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color: var(--yellow);
+    z-index: 2; 
+    /* margin-bottom: 0px; */
 }
 
-#close_menu {
+#open_menu {
     font-size: 18px;
     color: var(--dark);
     cursor: pointer;
@@ -41,28 +45,31 @@ nav {
         }
     }
 
-    button {
+    .sign_in_link {
         background-color: var(--white);
+        text-decoration: none;
         border: none;
         border-radius: 3px;
-        font-size: 14px;
-        font-weight: 700;
         padding: 8px 16px;
         cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
     }
 
-    button:hover {
+    .sign_in_link:hover {
         background-color: var(--light);
     }
 }
 
-
+.mobile_navbar {
+    display: none;
+}
 
 
 
 /* xs */
 @media (max-width: 639px) {
-    #close_menu {
+    #open_menu {
         display: block;
         padding: 0 12px;
     }
@@ -78,8 +85,74 @@ nav {
         padding: 8px 12px;
     }
 
-    #close_menu {
+    #open_menu {
         display: block;
+    }
+
+    .mobile_navbar {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -950px; /* change to 0 if Open */
+        background-color: #00000099;
+        z-index: 10;
+        transition: right 0.3s ease;
+    
+        .mobile_header {
+            background-color: var(--yellow);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding: 6px 16px;
+        }
+    
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+    
+        #close_menu {
+            color: var(--dark);
+            font-size: 32px;
+            cursor: pointer;
+        }
+    
+        .mobile_links {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+    
+            li {
+                border: 1px solid #0000004D;
+                text-align: start;
+                width: 100%;
+                padding: 16px 12px;
+    
+                a {
+                    color: var(--yellow);
+                    display: block;
+                    margin: 0;
+                    text-decoration: none;
+                }
+    
+                .sign_in_link {
+                    padding: 16px 0;
+                    background-color: #fff;
+                    text-decoration: none;
+                    width: 100%;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    text-align: center;
+                    color: var(--dark);
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }
 

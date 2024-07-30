@@ -47,6 +47,7 @@
 }
 
 footer {
+  margin-top: auto;
   background-color: var(--yellow);
   padding: 8px 0;
   div {

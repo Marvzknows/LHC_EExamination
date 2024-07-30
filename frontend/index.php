@@ -27,13 +27,29 @@
                     <li> <a href="#news_Section">News</a></li>
                     <li> <a href="#contact_section">Contact</a></li>
                     <li>
-                        <button> Sign In </button>
+                        <a class="sign_in_link" href="signin.php">Sign In</a>
                     </li>
                 </ul>
 
-                <!-- Mobile Nav -->
-                <i id="close_menu" class="fa-solid fa-bars"></i>
+                <i id="open_menu" class="fa-solid fa-bars"></i>
+
             </nav>
+
+            <div id="mobile_navbar" class="mobile_navbar">
+                <div class="mobile_header">
+                    <h2>Dummy</h2>
+                    <i id="close_menu" class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="mobile_links">
+                    <li> <a href="#service_section">Service</a></li>
+                    <li> <a href="#about_us_Section">About Us</a></li>
+                    <li> <a href="#news_Section">News</a></li>
+                    <li> <a href="#contact_section">Contact</a></li>
+                    <li>
+                        <a class="sign_in_link" href="signin.php">Sign In</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Carousel -->
@@ -165,6 +181,7 @@
 
     <script src="../frontend/js/jquery.min.js"></script>
     <script src="../frontend/js/index.js"></script>
+    <script src="../frontend/js/navbar.js"></script>
 </body>
 
 </html>
