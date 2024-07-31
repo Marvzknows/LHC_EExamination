@@ -20,11 +20,12 @@
 }
 
 #signUpForm {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 4px;
-    width: 529px;
+    width: 429px;
     height: 320px;
-    margin: auto;
+    margin: 16px auto;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -46,7 +47,7 @@
 
     input {
         border: 1px solid #AAAAAA;
-        height: 55px;
+        padding: 16px 12px;
         border-radius: 4px;
     }
 }
@@ -57,6 +58,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-top: 12px;
 
     
     button {
@@ -74,6 +76,7 @@
     a {
         text-decoration: none;
         color: var(--link);
+        font-weight: 500;
     }
 }
 
@@ -82,13 +85,27 @@
     justify-content: end;
     align-items: center;
     gap: 18px;
-    width: 529px;
+    width: 429px;
+    padding-bottom: 12px;
     margin: auto;
 
     a {
         text-decoration: none;
         color: var(--link);
+        font-weight: 500;
     }
+}
+
+#error_message {
+    background-color: var(--danger-tertiary);
+    border: 1px solid var(--danger-secondary);
+    margin-bottom: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--danger-primary);
 }
 
 /* xs */
@@ -99,13 +116,16 @@
 /* sm */
 @media (max-width: 768px) {
     .header {
+        height: 20vh;
         h1 {
             font-size: 29px;
         }
+
     }
 
     #signUpForm {
-        width: 80%;
+        width: 90%;
+        margin-top: auto;
     }
 
     .signup_btns {
@@ -123,7 +143,8 @@
 
     .form_row {
         input {
-            height: 45px;
+            padding: 16px 12px;
+            border-radius: 4px;
         }
     }
 

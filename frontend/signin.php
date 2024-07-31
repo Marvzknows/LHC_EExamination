@@ -56,6 +56,9 @@
 
         <!-- Form -->
         <form id="signUpForm">
+            <div id="error_message" class="form_row error_container">
+                Login Failed
+            </div>
             <div class="form_row">
                 <label for="username">USERNAME</label>
                 <input type="text" id="username" name="username">
@@ -90,6 +93,7 @@
 
     <script src="../frontend/js/jquery.min.js"></script>
     <script src="../frontend/js/navbar.js"></script>
+    <script src="../frontend/js/signin.js"></script>
 </body>
 
 </html>
