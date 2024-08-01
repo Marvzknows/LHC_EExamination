@@ -2,6 +2,7 @@ $(document).ready(function () {
     const openNavbarBtn = $('#open_menu');
     const closeNavbarBtn = $('#close_menu');
     const mobileNavbar = $('#mobile_navbar');
+    const baseURL = 'http://localhost/lionheart-web-system';
     const logo = $('#logo');
 
     
@@ -16,6 +17,6 @@ $(document).ready(function () {
     })
 
     logo.click(function() {
-        alert('Logo Clicked');
+        window.location.href = `${baseURL}/frontend/index.php`;
     })
 });
