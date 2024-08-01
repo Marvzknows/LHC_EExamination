@@ -12,8 +12,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $password = $_POST['password'];
 
-    $login = $method->login($name, $password);
-    echo json_encode($login);
+    $signup = $method->signup($name, $password);
+    echo json_encode($signup);
 
     
 }else {

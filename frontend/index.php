@@ -20,7 +20,7 @@
         <!-- Navbar -->
         <div class="nav-container">
             <nav class="container">
-                <h2>Dummy</h2>
+                <h2 id="logo">Dummy</h2>
                 <ul>
                     <li> <a href="#service_section">Service</a></li>
                     <li> <a href="#about_us_Section">About Us</a></li>
@@ -37,7 +37,7 @@
 
             <div id="mobile_navbar" class="mobile_navbar">
                 <div class="mobile_header">
-                    <h2>Dummy</h2>
+                    <h id="logo">Dummy</h2>
                     <i id="close_menu" class="fa-solid fa-xmark"></i>
                 </div>
                 <ul class="mobile_links">

@@ -2,9 +2,9 @@ $(document).ready(function () {
     const openNavbarBtn = $('#open_menu');
     const closeNavbarBtn = $('#close_menu');
     const mobileNavbar = $('#mobile_navbar');
+    const logo = $('#logo');
 
     
-    // #region Handle Mobile Navbar
     openNavbarBtn.click(function() {
         mobileNavbar.css('right', '0');
         $('body').css('overflow', 'hidden');
@@ -14,5 +14,8 @@ $(document).ready(function () {
         mobileNavbar.css('right', '-950px');
         $('body').css('overflow', '');
     })
-    // #regionend
+
+    logo.click(function() {
+        alert('Logo Clicked');
+    })
 });

@@ -47,8 +47,9 @@
 
     input {
         border: 1px solid #AAAAAA;
-        padding: 16px 12px;
+        padding: 14px 12px;
         border-radius: 4px;
+        margin-bottom: 4px;
     }
 }
 
@@ -103,8 +104,9 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     font-weight: 600;
+    padding: 0 12px;
     color: var(--danger-primary);
 }
 

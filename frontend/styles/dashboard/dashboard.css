@@ -1,0 +1,67 @@
+
+.dashboard_Body {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+    width: 429px;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .login_alert {
+        border: 1px solid var(--success-tertiary);
+        background-color: var(--success-secondary);
+        color: var(--success-primary);
+        width: 80%;
+        border-radius: 5px;
+        font-weight: 500;
+        padding: 12px;
+    }
+
+    button {
+        background-color: var(--pink);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        color: #fff;
+        padding: 16px 32px;
+        width: 38%;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    button:hover {
+        background-color: #ac0b66;
+    }
+}
+
+
+/* sm */
+@media (max-width: 768px) {
+    .dashboard_Body {
+        width: 90%;
+
+        button {
+            padding: 14px 28px;
+        }
+    }
+}
+
+/* md */
+@media (max-width: 1023px) {
+
+}
+
+/* lg */
+@media (max-width: 1279px) {
+
+}
+
+/* xl */
+@media (max-width: 1535px) {
+
+}
+
